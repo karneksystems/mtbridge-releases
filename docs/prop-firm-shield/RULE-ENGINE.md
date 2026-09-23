@@ -142,5 +142,8 @@ someone opens the sourceUrl and sets lastVerified.
 | Alpha Capital | Alpha Pro 6%, Alpha One, Alpha Three: 5 / 5. Alpha Pro 8% and 10%: 2 / 2 | 5 or 2 | to confirm | | help.alphacapitalgroup.uk/en/articles/9293522 |
 | Blue Guardian | Funded only. Challenge phase allowed | 5 / 5 | profit-removed, no violation | Red-folder set includes FOMC, NFP, CPI, JOLTS, claims and Fed speeches | help.blueguardian.com, per-model rule pages |
 
-The pack files go in a packs/ directory once the repo moves. Until then this table
-is the spec.
+The pack files are in `packs/`, the JSON Schema in `schema/firm-pack.schema.json`,
+and `schema/validate_packs.py` is the CI gate. Ten engine fixtures with a Python
+reference implementation are in `fixtures/rule-engine/`; both the Dart and PHP
+engines must pass them, and the identifier hashing they define is the contract that
+keeps the local mirror deduping against server push.

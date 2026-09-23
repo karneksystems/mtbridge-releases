@@ -1,16 +1,27 @@
 # Family Controls entitlement request
 
-Apple grants the distribution entitlement per bundle identifier, and separately for
-each Screen Time extension. Four requests in total: the app, the DeviceActivityMonitor
-extension, the ShieldConfiguration extension, the ShieldAction extension. Development
-builds work without approval; App Store distribution doesn't. Replies take from a few
-business days to a few weeks, and Apple reviews by hand, so file this now, before any
-iOS code exists. The request form is linked from the Family Controls documentation
-under "Requesting the Family Controls entitlement" in the developer portal.
+Status, 23 Sep 2026: four App IDs exist with Family Controls (Development) ticked,
+com.stanchion.wideberth plus .monitor, .shieldconfig and .shieldaction. The
+distribution entitlement has not been requested yet.
 
-Bundle identifiers below are placeholders until the name clears.
+What Apple's portal does now, as seen on the day: the per-app "Family Controls
+(Distribution)" request links to a single page with one "Get Entitlement" button.
+Pressing it accepts Apple's Family Controls terms for the whole team, Stanchion
+Systems Ltd. There is no form and nowhere to paste a description. The terms in
+summary: the app's primary purpose must be parental supervision or letting
+individuals manage their own device use (ours is the second); it may not be used to
+manage another adult's device; usage data may not be shared, used for advertising,
+or passed to data brokers. Because acceptance is team-level, renaming the app and
+its bundle IDs later does not require doing this again.
 
-## Text for the form
+The account holder presses the button. Development builds work without it; App
+Store distribution doesn't.
+
+The text below was written for the old per-app form. Keep it: it's the honest
+description of the use, and it's what to send if Apple ever asks for one during
+review.
+
+## Text for the form (kept for App Review)
 
 App name: Wideberth (working title)
 
